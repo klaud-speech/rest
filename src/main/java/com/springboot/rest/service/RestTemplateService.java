@@ -3,12 +3,14 @@ package com.springboot.rest.service;
 import com.springboot.rest.dto.MemberDto;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.lang.module.ResolutionException;
 import java.net.URI;
+import java.net.http.HttpClient;
 
 @Service
 public class RestTemplateService {
